@@ -250,9 +250,9 @@ Using the feet function below do the following:
 
 
 function feet(centi){
-  return (centi * 30.48);
+  return (centi / 30.48);
 }
-feet(1);
+console.log(feet(160))
  
 
 
@@ -294,15 +294,15 @@ Using the grade function below do the following:
 
 function grade(score){
   if (score >= 90){
-      return'You received an "A"';
+      return'you got an A';
   } else if (score <= 89 && score >= 80 ) {
-      return'You received an "B"';
+      return'you got a B';
   } else if (score <= 79 && score >= 70 ) {
-      return'You received an "C"';
+      return'you got a C';
   } else if (score <= 69 && score >= 60 ) {
-      return'You received an "D"';
+      return'you got a D';
   } else if (score <= 59 ) {
-      return'You received an "F"';
+      return'you got a F';
   }
 }
 console.log(grade(99))
